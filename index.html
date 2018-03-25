@@ -676,7 +676,7 @@
                                     <!-- /.row -->
                                     <div class="g-recaptcha" data-sitekey="6LdDzE4UAAAAAGUEbtbqRKZCLJR5wKtypbcNIRhB" data-callback="enableBtn()"></div>
 
-                                    <button type="submit" class="btn btn-default btn-submit" onclick="ga('send', 'event', 'Misc', 'click', 'GetInTouch_SubmitMessage_button')" id="ContactSubmitButton">Submit message</button>
+                                    <button type="submit" class="btn btn-default btn-submit" onclick="ga('send', 'event', 'Misc', 'click', 'GetInTouch_SubmitMessage_button')" id="ContactSubmitButton" disabled>Submit message</button>
 
                                 </form>
 
@@ -1356,7 +1356,7 @@
                                         <div class="col-sm-6 inner-right-xs text-right">
                                             <figure>
                                                 <a href="assets/images/inUse/workEF/work_ef_1l.jpg" data-lightbox="assets/images/inUse/workEF/work_ef_1l.jpg" data-title="Layout Manager">
-                                                    <img src="assets/images/inUse/workEF/work_ef_1.png" alt="Layout Manger">
+                                                    <img src="assets/images/inUse/workEF/work_ef_1l.jpg" alt="Layout Manger">
                                                 </a>
                                             </figure>
                                         </div>
@@ -1377,7 +1377,7 @@
 
                                             <figure>
                                                 <a href="assets/images/inUse/workEF/work_ef_2l.jpg" data-lightbox="assets/images/inUse/workEF/work_ef_2l.jpg" data-title="Layout Manager">
-                                                    <img src="assets/images/inUse/workEF/work_ef_2.png" alt="Layout Manger">
+                                                    <img src="assets/images/inUse/workEF/work_ef_2l.jpg" alt="Layout Manger">
                                                 </a>
                                             </figure>
 
@@ -1401,7 +1401,7 @@
                                             <div class="item">
                                                 <figure>
                                                     <a href="assets/images/inUse/workEF/work_ef_3.jpg" data-lightbox="assets/images/inUse/workEF/work_ef_3.jpg" data-title="CheckIn">
-                                                        <img src="assets/images/inUse/workEF/work_ef_3.png" alt="CheckIn">
+                                                        <img src="assets/images/inUse/workEF/work_ef_3.jpg" alt="CheckIn">
                                                     </a>
                                                 </figure>
                                             </div>
@@ -1990,6 +1990,11 @@
 
     <!-- ============================================================= FOOTER : END ============================================================= -->
     <!-- JavaScripts placed at the end of the document so the pages load faster -->
+    <script>
+        function enableBtn() {
+            document.getElementById("ContactSubmitButton").disabled = false;
+        }
+    </script>
     <script src="assets/js/slider/jquery-2.1.1.js"></script>
     <!-- temp- slider -->
     <script src="assets/js/slider/jquery-2.1.1.js"></script>
