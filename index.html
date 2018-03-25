@@ -71,6 +71,7 @@
         ga('create', 'UA-104067603-1', 'auto');
         ga('send', 'pageview');
     </script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body id="top">
@@ -673,7 +674,9 @@
                                         <!-- /.col -->
                                     </div>
                                     <!-- /.row -->
-                                    <button type="submit" class="btn btn-default btn-submit" onclick="ga('send', 'event', 'Misc', 'click', 'GetInTouch_SubmitMessage_button')">Submit message</button>
+                                    <div class="g-recaptcha" data-sitekey="6LdDzE4UAAAAAGUEbtbqRKZCLJR5wKtypbcNIRhB" data-callback="enableBtn()"></div>
+
+                                    <button type="submit" class="btn btn-default btn-submit" onclick="ga('send', 'event', 'Misc', 'click', 'GetInTouch_SubmitMessage_button')" id="ContactSubmitButton">Submit message</button>
 
                                 </form>
 
